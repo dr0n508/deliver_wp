@@ -1,0 +1,330 @@
+@font-face
+  font-family: 'Novecentowide-Medium'
+  src: url('../fonts/Novecentowide-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/Novecentowide-Medium.otf')  format('opentype'), url('../fonts/Novecentowide-Medium.woff') format('woff'), url('../fonts/Novecentowide-Medium.ttf')  format('truetype'), url('../fonts/Novecentowide-Medium.svg#Novecentowide-Medium') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'HelveticaNeue'
+  src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf')  format('truetype'), url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg')
+  font-weight: normal
+  font-style: normal
+
+*
+  font-family: 'Novecentowide-Medium'
+
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+@mixin transition
+  -webkit-transition: .3s
+  -moz-transition: .3s
+  -ms-transition: .3s
+  -o-transition: .3s
+  transition: .3s
+
+$green : #87b672
+$gray : #666262
+
+h2
+  color: $gray
+  font-size: 22px
+  text-align: center
+.descr-section
+  font-family: "HelveticaNeue", sans-serif
+  font-size: 16px
+  color: #9b9999
+  text-align: center
+  margin: 20px 0 50px
+
+header
+  position: absolute
+  z-index: 999
+  left: 0
+  right: 0
+
+.wrap-logo-social
+  margin: 20px 0
+.social
+  float: right
+  li
+    display: inline-block
+    background: rgba(255,255,255,0.8)
+    font-size: 18px
+    width: 35px
+    height: 35px
+    border-radius: 50%
+    text-align: center
+    line-height: 35px
+    cursor: pointer
+    margin-left: 10px
+    @include transition
+    &:hover
+      background: #fefefe
+    a
+      color: $gray
+
+
+
+#owl-demo .item img
+  display: block
+  width: 100%
+  height: auto
+
+#owl-demo .item
+  padding: 150px 0
+  text-align: center
+
+
+#owl-demo
+  position: relative
+.owl-pagination
+  position: absolute
+  bottom: 50px
+  left: 0
+  right: 0
+.owl-prev, .owl-next
+  width: 65px
+  height: 65px
+  border-radius: 50%
+  position: absolute
+  top: 50%
+  margin-top: -32px
+
+.owl-prev
+  background: url("../img/button-left.png") 50% 50% no-repeat !important
+  left: 50px
+.owl-next
+  background: url("../img/button-right.png") 50% 50% no-repeat !important
+  right: 50px
+
+.slide1
+  background: url("../img/slide01.jpg") no-repeat
+  background-size: cover
+.slide2
+  background: url("../img/slide02.jpg") no-repeat
+  background-size: cover
+
+.first-screen
+  position: relative
+  color: #ffffff
+  background-size: cover
+  .search-form
+    display: none
+    text-align: right
+    margin-bottom: 20px
+    input
+      font-family: "HelveticaNeue", sans-serif
+      width: 100%
+      height: 40px
+      border: 0
+      background: rgba(255,255,255,.5)
+      padding: 10px 30px
+      font-size: 16px
+      border-radius: 20px
+      outline: none
+      color: #000000
+    ::-webkit-input-placeholder
+      color: #808080
+    ::-moz-placeholder
+      color: #808080
+  .navbar-default
+    background: none
+    border: none
+    box-shadow: none
+
+  nav
+    border-top: solid 1px #ffffff !important
+    border-radius: 0
+    ul
+      display: inline-block
+      li
+        margin-right: 25px
+        a
+          font-size: 18px
+          color: #ffffff !important
+          text-transform: uppercase
+          padding: 20px 0
+          display: block
+          &:hover
+            color: $green !important
+      .active a
+        color: $green !important
+        background: none !important
+        box-shadow: none !important
+    .search
+      position: relative
+      font-size: 18px
+      color: #dfd6c8
+      float: right
+      line-height: 65px
+      @include transition
+      &:hover
+        text-decoration: none
+        color: #808080
+
+  h1
+    font-size: 36px
+    /*color: #ffffff
+    margin: 80px 0 30px
+    span
+      color: $green
+  p
+    font-family: "HelveticaNeue", sans-serif
+    font-size: 22px
+    margin-bottom: 20px
+  .btn-portfolio
+    text-align: center
+    a
+      display: inline-block
+      padding: 10px 20px
+      color: #ffffff
+      border: solid 2px #ffffff
+      font-size: 14px
+
+.services
+  padding: 50px 0
+  ul
+    text-align: center
+    border-top: solid 1px #cccccc
+    padding-top: 50px
+    li
+      .wrap-img
+        min-height: 100px
+      h3
+        font-size: 18px
+        /*padding-top: 130px
+        color: $gray
+      p
+        color: #9b9999
+        font-family: "HelveticaNeue", sans-serif
+        font-size: 16px
+      a
+        color: $green
+        font-family: "HelveticaNeue", sans-serif
+        font-size: 16px
+
+.latest-work
+  padding: 50px 0 0
+  margin-bottom: 150px
+  background: #efefef
+  position: relative
+  ul
+    text-align: center
+    li
+      margin-bottom: -80px
+      a
+        position: relative
+        display: block
+        &:hover .overlay
+          display: block
+        .overlay
+          display: none
+          width: 100%
+          height: 100%
+          background: rgba(255,255,255,.10)
+          position: absolute
+          top: 0
+          i
+            margin-top: 70px
+            color: #464c52
+        img
+          width: 100%
+          height: auto
+    h3
+      font-size: 18px
+
+.call-to-action
+  padding: 50px 50px
+  border-top: solid 1px #cccccc
+  text-align: center
+  a
+    color: #ffffff
+    background: $green
+    padding: 12px 20px
+
+footer
+  background: #333333
+  color: #ffffff
+  padding: 50px 0 0
+  section
+    margin-bottom: 20px
+  h3
+    margin: 0
+    padding: 0
+    font-size: 18px
+    margin-bottom: 20px
+  .site-descr
+    p
+      font-size: 14px
+      font-family: "HelveticaNeue", sans-serif
+      color: #9b9999
+  .widget
+    p
+      font-family: "HelveticaNeue"
+      color: #9b9999
+    .phone
+      font-size: 16px
+      font-family: 'Novecentowide-Medium'
+      color: #ffffff
+
+  .widget
+    li
+      display: block
+      font-size: 10px
+      /*margin-bottom: 5px
+      a
+        color: #9b9999
+        font-family: "HelveticaNeue"
+        font-size: 14px
+        padding-left: 5px
+        &:hover
+          text-decoration: none
+          color: white
+        &:before
+          content: ">"
+          margin-right: 5px
+          color: white
+
+  .widget
+    p
+      font-family: "HelveticaNeue"
+      color: #9b9999
+    input
+      float: left
+      border: none
+      outline: none
+    .input-email
+      width: 80%
+      padding: 10px
+      font-family: "HelveticaNeue"
+      background: #4e4c4c
+    .btn-submit
+      width: 18%
+      margin-left: 2%
+      padding: 10px
+      background: #828282
+
+  .bottom-footer
+    border-top: solid 1px #808080
+    padding-top: 30px
+    font-size: 12px
+    p
+      display: inline-block
+      color: #808080
+      a
+        color: #cbcbcb
+    ul
+      float: right
+      li
+        display: inline-block
+        &:after
+          content: "/"
+          color: #808080
+          margin: 0 5px
+        &:last-child:after
+          display: none
+        a
+          color: #808080
